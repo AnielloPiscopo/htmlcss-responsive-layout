@@ -12,7 +12,7 @@ main section{
 main .column{
     background-color: aqua;
     height: 10rem;
-    border-bottom: 1px solid;
+    border: 10px solid black;
 }
 
 #about-us .column:first-of-type{
@@ -147,6 +147,28 @@ RESPONSIVENESS */
 
 /* * TABLET */
 @media screen and (min-width:768px){
+    /* *GENERAL STYLES */
+    /* ? CLASSES */
+    .d_flex.columns-container .column{
+        margin-right: 2rem;
+    }
+
+
+
+    /* * SPECIFIC STYLES */
+    
+    /* ? MAIN */
+    #general-info .columns-container.d_flex .column{
+        width: calc(100%/3 - 2rem);
+    }
+
+    #general-info .columns-container.d_flex .column:first-of-type{
+        width: calc(100%/3*2 - 2rem);
+    }
+
+    #beneficts .columns-container.d_flex .column{
+        width: calc(100%/2 - 2rem);
+    }
 }
 
 
