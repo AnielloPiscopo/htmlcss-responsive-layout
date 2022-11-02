@@ -58,11 +58,6 @@ ul{
     list-style: none;
 }
 
-h1{
-    font-size: 2rem;
-}
-
-
 
 /* * CLASSES */
 
@@ -101,6 +96,17 @@ h1{
 
 .p_relative{
     position: relative;
+}
+
+
+/* ? Text */
+.title{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.subtitle{
+    text-align: center;
 }
 
 
