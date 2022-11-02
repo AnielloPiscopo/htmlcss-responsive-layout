@@ -6,12 +6,12 @@ header{
 main section{
     background-color: darkblue;
     border-bottom: 1px solid;
-    height: 100rem;
+    height: 100em;
 }
 
 main .column{
     background-color: aqua;
-    height: 10rem;
+    height: 10em;
     border: 10px solid black;
 }
 
@@ -21,8 +21,12 @@ main .column{
 
 footer section{
     border-bottom: 1px solid;
-    height: 50rem;
+    height: 50em;
     background-color: yellow;
+}
+
+footer .container{
+    background-color: azure;
 }
 
 
@@ -66,8 +70,8 @@ ul{
     height: 100%;
     margin: 0 auto;
     width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 
@@ -91,7 +95,7 @@ ul{
 
 .d_flex.columns-container .column{
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
 }
 
 
@@ -107,7 +111,7 @@ ul{
 
 /* ? Text */
 .title{
-    font-size: 2rem;
+    font-size: 2em;
     text-align: center;
 }
 
@@ -118,11 +122,11 @@ ul{
 
 /* ? Other */
 .column.small_border-radius{
-    border-radius: 2rem;
+    border-radius: 2em;
 }
 
 .column.big_border-radius{
-    border-radius: 4rem;
+    border-radius: 4em;
 }
 
 
@@ -134,7 +138,7 @@ SPECIFIC STYLES *****************************/
 
 /* * HEADER */
 header{
-    height: 4.6rem;
+    height: 4.6em;
 }
 
 
@@ -147,11 +151,18 @@ header nav ul{
 
 /* * MAIN */
 main .container{
-    padding-top: 4rem;
+    padding-top: 4em;
 }
 
 main .container:last-of-type{
-    padding-top: 6rem;
+    padding-top: 6em;
+}
+
+
+
+/* * FOOTER */
+footer .container{
+    max-width: 480px;
 }
 
 
@@ -171,7 +182,7 @@ RESPONSIVENESS */
     /* *GENERAL STYLES */
     /* ? CLASSES */
     .d_flex.columns-container .column{
-        margin-right: 2rem;
+        margin-right: 2em;
     }
 
 
@@ -180,15 +191,15 @@ RESPONSIVENESS */
     
     /* ? MAIN */
     #general-info .columns-container.d_flex .column{
-        width: calc(100%/3 - 2rem);
+        width: calc(100%/3 - 2em);
     }
 
     #general-info .columns-container.d_flex .column:first-of-type{
-        width: calc(100%/3*2 - 2rem);
+        width: calc(100%/3*2 - 2em);
     }
 
     #beneficts .columns-container.d_flex .column{
-        width: calc(100%/2 - 2rem);
+        width: calc(100%/2 - 2em);
     }
 }
 
@@ -227,6 +238,6 @@ RESPONSIVENESS */
 
     /* ? MAIN */
     #beneficts .columns-container.d_flex .column{
-        width: calc(100%/3 - 2rem);
+        width: calc(100%/3 - 2em);
     }
 }
