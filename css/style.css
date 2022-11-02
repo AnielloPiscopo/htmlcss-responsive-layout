@@ -55,8 +55,8 @@ ul{
 /* ? Container */
 .container{
     margin: 0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 
@@ -94,3 +94,8 @@ ul{
 
 /* *****************************************
 SPECIFIC STYLES *****************************/
+
+/* * HEADER */
+header{
+    height: 4.6rem;
+}
