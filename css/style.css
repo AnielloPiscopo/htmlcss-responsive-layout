@@ -9,6 +9,12 @@ main section{
     height: 50rem;
 }
 
+main .column{
+    background-color: aqua;
+    height: 10rem;
+    border-bottom: 1px solid;
+}
+
 footer section{
     border-bottom: 1px solid;
     height: 50rem;
@@ -98,4 +104,15 @@ SPECIFIC STYLES *****************************/
 /* * HEADER */
 header{
     height: 4.6rem;
+}
+
+
+
+/* * MAIN */
+main .container{
+    padding-top: 4rem;
+}
+
+main .container:last-of-type{
+    padding-top: 6rem;
 }
