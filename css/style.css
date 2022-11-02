@@ -3,6 +3,10 @@ header{
     background-color: blueviolet;
 }
 
+.p_absolute{
+    background-color: aqua;
+}
+
 main section{
     background-color: darkblue;
     border-bottom: 1px solid;
@@ -95,6 +99,10 @@ ul{
 
 
 /* ? Displays */
+.d_none{
+    display: none;
+}
+
 
 /* ? Positions */
 .p_absolute{
@@ -140,9 +148,15 @@ header{
 }
 
 
-/* ? Header Navbar */
-header nav ul{
-    display: none;
+/* ? Navbar */
+#nav-btn:checked ~ ul.d_none{
+    display: block;
+}
+
+header nav ul.p_absolute{
+    top: 4.6em;
+    left: 0;
+    right: 0;
 }
 
 
@@ -283,7 +297,7 @@ RESPONSIVENESS */
         width: 50%;
     }
 
-    header nav ul{
+    header nav ul.d_none{
         display: flex;
         justify-content: space-between;
         align-items: center;

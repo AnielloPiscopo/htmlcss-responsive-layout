@@ -24,7 +24,7 @@
     <body>
         <!-- * HEADER -->
         <header>
-                <div class="container d_flex space-between">
+                <div class="container d_flex space-between p_relative">
                     <!-- ? Logo -->
                     <div class="img-container">
                         <img src="assets/img/logo.png" alt="logo" class="logo">
@@ -32,10 +32,14 @@
 
 
                     <!-- ? Navbar -->
-                    <nav class="p_relative">
-                        <i class="fa-solid fa-bars icon"></i>
+                    <nav>
+                        <input type="checkbox" id="nav-btn" class="d_none">
+                        
+                        <label for="nav-btn">
+                            <i class="fa-solid fa-bars icon"></i>
+                        </label>
 
-                        <ul>
+                        <ul class="d_none p_absolute">
                             <li>lol</li>
                             <li>lol</li>
                             <li>lol</li>
