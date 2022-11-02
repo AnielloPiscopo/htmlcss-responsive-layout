@@ -1,3 +1,15 @@
+/* ! MOMENTANEAL STYLES /
+
+
+
+
+
+
+
+
+
+
+
 /* *****************************************
 GENERAL STYLES *****************************/
 
@@ -47,6 +59,16 @@ ul{
 
 .d_flex.center{
     justify-content: center;
+}
+
+
+/* ? Positions */
+.p_absolute{
+    position: absolute;
+}
+
+.p_relative{
+    position: relative;
 }
 
 
