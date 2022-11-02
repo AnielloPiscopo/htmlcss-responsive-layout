@@ -1,4 +1,19 @@
-/* ! MOMENTANEAL STYLES /
+/* ! MOMENTANEAL STYLES */
+header{
+    background-color: blueviolet;
+}
+
+main section{
+    background-color: darkblue;
+    border-bottom: 1px solid;
+    height: 50rem;
+}
+
+footer section{
+    border-bottom: 1px solid;
+    height: 50rem;
+    background-color: yellow;
+}
 
 
 
@@ -39,7 +54,6 @@ ul{
 
 /* ? Container */
 .container{
-    width: 100%;
     margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
