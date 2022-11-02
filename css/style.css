@@ -289,6 +289,11 @@ RESPONSIVENESS */
     /* * SPECIFIC STYLES */
     
     /* ? HEADER */
+    header .p_absolute,
+    header .p_relative{
+        position: static;
+    }
+    
     header nav .icon{
         display: none;
     }
