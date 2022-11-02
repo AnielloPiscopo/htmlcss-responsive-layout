@@ -116,6 +116,16 @@ ul{
 }
 
 
+/* ? Other */
+.column.small_border-radius{
+    border-radius: 2rem;
+}
+
+.column.big_border-radius{
+    border-radius: 4rem;
+}
+
+
 
 
 
@@ -212,5 +222,11 @@ RESPONSIVENESS */
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+
+    /* ? MAIN */
+    #beneficts .columns-container.d_flex .column{
+        width: calc(100%/3 - 2rem);
     }
 }
