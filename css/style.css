@@ -63,7 +63,9 @@ ul{
 
 /* ? Container */
 .container{
+    height: 100%;
     margin: 0 auto;
+    width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
 }
@@ -73,7 +75,6 @@ ul{
 .d_flex{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .d_flex.space-between{
@@ -82,6 +83,10 @@ ul{
 
 .d_flex.center{
     justify-content: center;
+}
+
+.d_flex.columns-container{
+    flex-wrap: wrap;
 }
 
 .d_flex.columns-container .column{
@@ -123,6 +128,12 @@ header{
 }
 
 
+/* ? Header Navbar */
+header nav ul{
+    display: none;
+}
+
+
 
 /* * MAIN */
 main .container{
@@ -145,7 +156,7 @@ main .container:last-of-type{
 /* ********************************************
 RESPONSIVENESS */
 
-/* * TABLET */
+/* ? TABLET */
 @media screen and (min-width:768px){
     /* *GENERAL STYLES */
     /* ? CLASSES */
@@ -175,6 +186,31 @@ RESPONSIVENESS */
 
 
 
-/* * PC */
+/* ? PC */
 @media screen and (min-width:992px){
+    /* * GENERAL STYLES */
+
+    /* ? CLASSES */
+    .container{
+        max-width: 1050px;
+    }
+
+
+
+    /* * SPECIFIC STYLES */
+    
+    /* ? HEADER */
+    header nav .icon{
+        display: none;
+    }
+
+    header nav{
+        width: 50%;
+    }
+
+    header nav ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
