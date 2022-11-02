@@ -92,18 +92,6 @@ ul{
 }
 
 
-/* ? Floats */
-.clearfix::after{
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.fl-lf{
-    float: left;
-}
-
-
 /* ? Positions */
 .p_absolute{
     position: absolute;
@@ -199,6 +187,16 @@ RESPONSIVENESS */
     /* ? CLASSES */
     .d_flex.columns-container .column{
         margin-right: 2em;
+    }
+
+    .clearfix::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .fl-lf{
+        float: left;
     }
 
 
