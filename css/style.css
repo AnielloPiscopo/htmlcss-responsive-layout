@@ -15,8 +15,10 @@ main .column{
     border: 10px solid black;
 }
 
-#about-us .column:first-of-type{
-    height: auto;
+#about-us .clearfix > *{
+    height: 30em;
+    background-color: red;
+    border: 1px solid;
 }
 
 footer section{
@@ -89,13 +91,16 @@ ul{
     justify-content: center;
 }
 
-.d_flex.columns-container{
-    flex-wrap: wrap;
+
+/* ? Floats */
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
 }
 
-.d_flex.columns-container .column{
-    width: 100%;
-    margin-bottom: 2em;
+.fl-lf{
+    float: left;
 }
 
 
@@ -113,9 +118,11 @@ ul{
 .title{
     font-size: 2em;
     text-align: center;
+    padding-bottom: 1.5em;
 }
 
 .subtitle{
+    padding-bottom: 1.5em;
     text-align: center;
 }
 
@@ -156,6 +163,15 @@ main .container{
 
 main .container:last-of-type{
     padding-top: 6em;
+}
+
+main .d_flex.columns-container{
+    flex-wrap: wrap;
+}
+
+main .d_flex.columns-container .column{
+    width: 100%;
+    margin-bottom: 2em;
 }
 
 
@@ -201,8 +217,12 @@ RESPONSIVENESS */
     #beneficts .columns-container.d_flex .column{
         width: calc(100%/2 - 2em);
     }
-}
 
+    #about-us .fl-lf{
+        width: 60%;
+        padding-right: 5em;
+    }
+}
 
 
 
