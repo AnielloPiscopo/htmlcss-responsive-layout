@@ -15,6 +15,10 @@ main .column{
     border-bottom: 1px solid;
 }
 
+#about-us .column:first-of-type{
+    height: auto;
+}
+
 footer section{
     border-bottom: 1px solid;
     height: 50rem;
@@ -120,4 +124,19 @@ main .container{
 
 main .container:last-of-type{
     padding-top: 6rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* ********************************************
+RESPONSIVENESS */
+@media screen and (min-width:768px){
+    
 }
