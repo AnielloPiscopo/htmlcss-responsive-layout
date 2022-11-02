@@ -6,7 +6,7 @@ header{
 main section{
     background-color: darkblue;
     border-bottom: 1px solid;
-    height: 50rem;
+    height: 100rem;
 }
 
 main .column{
@@ -54,6 +54,10 @@ ul{
     list-style: none;
 }
 
+h1{
+    font-size: 2rem;
+}
+
 
 
 /* * CLASSES */
@@ -70,9 +74,6 @@ ul{
 .d_flex{
     display: flex;
     align-items: center;
-}
-
-.d_flex.wrap{
     flex-wrap: wrap;
 }
 
@@ -82,6 +83,10 @@ ul{
 
 .d_flex.center{
     justify-content: center;
+}
+
+.d_flex.columns-container .column{
+    width: 100%;
 }
 
 
