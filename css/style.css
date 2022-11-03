@@ -1,16 +1,4 @@
 /* ! MOMENTANEAL STYLES */
-main section{
-    border-bottom: 1px solid;
-    height: 100em;
-}
-
-main .card,
-main .column{
-    background-color: aqua;
-    height: 10em;
-    border: 10px solid black;
-}
-
 #testimonials .card{
     height: auto;
 }
@@ -185,6 +173,10 @@ a{
     object-fit: cover;
 }
 
+h3.subtitle{
+    font-size: 1.5em;
+}
+
 
 
 
@@ -235,6 +227,18 @@ main .columns-container.d_flex .column{
 /* ? General Info */
 #general-info .card{
     border-radius: var(--small_border-radius);
+    background-color: var(--lighter-main-color);
+    padding: 3em var(--column-distance);
+}
+
+#general-info .card .btn{
+    background-color: var(--main-color);
+    padding: 0.7em 3em;
+    margin: 3em 0;
+}
+
+#general-info .card .btn *{
+    color: var(--secondary-color-text);
 }
 
 
