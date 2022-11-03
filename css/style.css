@@ -119,7 +119,6 @@ a{
 
 .d_flex{
     display: flex;
-    align-items: center;
 }
 
 .d_flex.space-between{
@@ -191,6 +190,10 @@ header{
     background-color: var(--main-color);
 }
 
+header>.d_flex{
+    align-items: center;
+}
+
 
 /* ? Navbar */
 #nav-btn:checked ~ ul.d_none{
@@ -220,8 +223,11 @@ main section:last-of-type>.container{
 }
 
 main .columns-container.d_flex .column{
-    margin-bottom: var(--column-distance);
     width: 100%;
+}
+
+main div.columns-container.d_flex>.column{
+    margin-bottom: var(--column-distance);
 }
 
 
@@ -243,20 +249,26 @@ main .columns-container.d_flex .column{
 #general-info .card p{
     color: var(--lighter-main-color-text);
     font-weight: bold;
+    margin-bottom: 3em;
 }
 
 #general-info .card .btn{
     background-color: var(--main-color);
-    padding: 0.7em 3em;
-    margin: 3em 0;
+    padding: 0.5em 3em;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 #general-info .card .btn *{
     color: var(--secondary-color-text);
 }
 
+#general-info .card .btn .icon{
+    padding-right: 0.5em;
+}
+
 #general-info .card .img-container{
-    width: 50%;
+    margin-top: 3em;
 }
 
 
@@ -307,12 +319,12 @@ RESPONSIVENESS */
     /* *GENERAL STYLES */
 
     /* ? CLASSES */
-    .d_flex.columns-container:not(.d_flex.columns-container.card){
+    .d_flex.columns-container:not(#general-info article.d_flex.columns-container.card){
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .d_flex.columns-container .column:not(.d_flex.columns-container.card){
+    .d_flex.columns-container .column:not(#general-info article.d_flex.columns-container.card .column){
         padding-right: var(--column-distance);
     }
 
@@ -321,11 +333,11 @@ RESPONSIVENESS */
     /* * SPECIFIC STYLES */
     
     /* ? MAIN */
-    #general-info .columns-container.d_flex .column{
+    #general-info div.columns-container.d_flex>.column{
         width: calc(100%/3 - var(--column-distance));
     }
 
-    #general-info .columns-container.d_flex .column:first-of-type{
+    #general-info div.columns-container.d_flex>.column:first-of-type{
         width: calc(100%/3*2 - var(--column-distance));
     }
 
@@ -365,6 +377,7 @@ RESPONSIVENESS */
     .d_flex.columns-container.card{
         flex-direction: row;
         flex-wrap: wrap;
+        padding-right: 0;
     }
 
 
