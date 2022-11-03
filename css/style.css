@@ -87,7 +87,7 @@ GENERAL STYLES *****************************/
     /* ? Borders */
     --small_border-radius: 1.5em;
     --big_border-radius: 3em;
-    --oval-border-radius:25%;
+    --oval-border-radius:5em;
     --rounded-border-radius:50%;
 }
 
@@ -195,6 +195,7 @@ SPECIFIC STYLES *****************************/
 /* * HEADER */
 header{
     height: 4.6em;
+    background-color: var(--main-color);
 }
 
 
@@ -207,10 +208,11 @@ header nav ul.p_absolute{
     top: 4.6em;
     left: 0;
     right: 0;
+    background-color: var(--lighter-main-color);
 }
 
-header nav .btn{
-    padding: 0.5em 1em;
+header nav .icon{
+    color: var(--secondary-color-text);
 }
 
 
@@ -343,17 +345,28 @@ RESPONSIVENESS */
     /* * SPECIFIC STYLES */
     
     /* ? HEADER */
-    header .p_absolute,
+    header *{
+        color: var(--secondary-color-text);
+    }
+
+    header nav ul.p_absolute,
     header .p_relative{
         position: static;
-    }
-    
-    header nav .icon{
-        display: none;
+        background-color: var(--main-color);
     }
 
     header nav{
         width: 50%;
+    }
+
+    header nav .icon{
+        display: none;
+    }
+
+    header nav .btn{
+        padding: 0.5em 1em;
+        color: var(--main-color-text);
+        background-color: var(--secondary-color-text);
     }
 
     header nav ul.d_none{
