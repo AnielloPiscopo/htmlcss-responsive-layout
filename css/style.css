@@ -68,7 +68,7 @@ GENERAL STYLES *****************************/
 
 
     /* ? Distances */
-    --column-distance: 2em;
+    --column-distance: 1em;
     --container-padding-top :4em;
     --container-highter-padding-top:6em;
 
@@ -77,7 +77,7 @@ GENERAL STYLES *****************************/
     --small_border-radius: 1.5em;
     --big_border-radius: 3em;
     --oval-border-radius:5em;
-    --rounded-border-radius:50%;
+    --rounded-border-radius:100%;
 }
 
 
@@ -109,6 +109,7 @@ a{
     width: 100%;
     padding-left: 2em;
     padding-right: 2em;
+    min-width: 330px;
 }
 
 
@@ -233,6 +234,10 @@ main div.columns-container.d_flex>.column{
 
 
 /* ? General Info */
+#general-info{
+    padding-bottom: 4.5em;
+}
+
 #general-info .card{
     border-radius: var(--small_border-radius);
     background-color: var(--lighter-main-color);
@@ -283,12 +288,54 @@ main div.columns-container.d_flex>.column{
 
 
 /* ? Strategic Plannings */
+#strategic-plannings{
+    background-color: var(--secondary-color);
+    padding-bottom: 3em;
+}
+
+#strategic-plannings *{
+    color: var(--secondary-color-text);
+}
+
+#strategic-plannings .container .d_flex{
+    align-items: flex-start;
+}
+
+#strategic-plannings .img-container{
+    margin-top: 2em;
+    padding-bottom: 10em;
+}
+
 #strategic-plannings .card{
     border-radius: var(--big_border-radius);
+    background-color: var(--secondary-color-text);
+    margin-top: 1.5em;
+}
+
+#strategic-plannings .card *{
+    color: var(--main-color-text);
+}
+
+#strategic-plannings .card p{
+    font-style: italic;
+}
+
+#strategic-plannings .card .img-container{
+    padding-bottom: 3em;
+}
+
+#strategic-plannings .card .icon{
+    padding: 1em 1.2em;
+    margin: 2em 0;
+    border-radius: var(--rounded-border-radius);
+    background-color: var(--secondary-color);
 }
 
 
 /* ? Testimonials */
+#testimonials .title{
+    color: var(--secondary-color);
+}
 #testimonials .card{
     border-radius: var(--big_border-radius);
 }
@@ -441,5 +488,11 @@ RESPONSIVENESS */
 
     #strategic-plannings .columns-container.d_flex .column{
         width: calc(100%/2 - var(--column-distance));
+    }
+
+    #strategic-plannings .card .img-container{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
     }
 }
