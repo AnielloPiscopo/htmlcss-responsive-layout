@@ -97,11 +97,18 @@ GENERAL STYLES *****************************/
 /* * HTML TAGS */
 body{
     font-family: sans-serif;
+}
+
+body *{
     color: var(--main-color-text);
 }
 
 ul{
     list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 
