@@ -103,6 +103,23 @@ ul{
     display: none;
 }
 
+.d_flex{
+    display: flex;
+    align-items: center;
+}
+
+.d_flex.space-between{
+    justify-content: space-between;
+}
+
+.d_flex.center{
+    justify-content: center;
+}
+
+.d_flex.columns-container{
+    flex-direction: column;
+}
+
 
 /* ? Positions */
 .p_absolute{
@@ -170,9 +187,9 @@ main .container:last-of-type{
     padding-top: 6em;
 }
 
-main .columns-container .column{
-    width: 100%;
+main .columns-container.d_flex .column{
     margin-bottom: 2em;
+    width: 100%;
 }
 
 main .card.small_border-radius{
@@ -213,35 +230,13 @@ RESPONSIVENESS */
     /* *GENERAL STYLES */
 
     /* ? CLASSES */
-    .d_flex{
-        display: flex;
-        align-items: center;
-    }
-    
-    .d_flex.space-between{
-        justify-content: space-between;
-    }
-    
-    .d_flex.center{
-        justify-content: center;
-    }
-
     .d_flex.columns-container{
+        flex-direction: row;
         flex-wrap: wrap;
     }
 
     .d_flex.columns-container .column{
-        margin-right: 2em;
-    }
-
-    .clearfix::after{
-        content: '';
-        display: table;
-        clear: both;
-    }
-
-    .fl-lf{
-        float: left;
+        padding-right: 2em;
     }
 
 
@@ -257,18 +252,24 @@ RESPONSIVENESS */
         width: calc(100%/3*2 - 2em);
     }
 
-    #testimonials .fl-lf{
-        width: 20%;
-        padding-right: 3em;
+    #testimonials .cards .card .img-container{
+        width: calc(20% - 2em);
+    }
+
+    #testimonials .cards .card .text-content{
+        width: calc(80% - 2em);
     }
 
     #beneficts .columns-container.d_flex .column{
         width: calc(100%/2 - 2em);
     }
 
-    #about-us .fl-lf{
-        width: 60%;
-        padding-right: 5em;
+    #about-us .columns-container.d_flex .column.text-content{
+        width: calc(100%/3*2 - 2em);
+    }
+
+    #about-us .columns-container.d_flex article.column{
+        width: calc(100%/3 - 2em);
     }
 }
 
