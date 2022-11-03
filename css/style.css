@@ -250,6 +250,9 @@ main div.columns-container.d_flex>.column{
 #general-info .card p{
     color: var(--lighter-main-color-text);
     font-weight: bold;
+}
+
+#general-info .card:first-of-type p{
     margin-bottom: 3em;
 }
 
@@ -372,7 +375,7 @@ RESPONSIVENESS */
 
     /* ? CLASSES */
     .container{
-        max-width: 1050px;
+        max-width: 1100px;
     }
 
     .d_flex.columns-container.card{
@@ -420,6 +423,10 @@ RESPONSIVENESS */
     /* ? MAIN */
     #general-info article.d_flex.card.columns-container .column{
         width: calc(100%/2);
+    }
+
+    #general-info article.d_flex.card.columns-container .column.img-container{
+        padding-right: 3em;
     }
 
     #beneficts .columns-container.d_flex .column{
