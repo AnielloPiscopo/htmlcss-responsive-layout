@@ -8,7 +8,6 @@ header{
 }
 
 main section{
-    background-color: darkblue;
     border-bottom: 1px solid;
     height: 100em;
 }
@@ -78,9 +77,19 @@ GENERAL STYLES *****************************/
 
 /* * ROOT */
 :root{
+    /* ? Colors */
+    --main-color-text: #333333;
+    --secondary-color-text: white;
+
+
+
+    /* ? Distances */
     --column-distance: 2em;
-    --small_border-radius: 2em;
-    --big_border-radius: 4em;
+
+
+    /* ? Borders */
+    --small_border-radius: 1.5em;
+    --big_border-radius: 3em;
 }
 
 
@@ -88,6 +97,7 @@ GENERAL STYLES *****************************/
 /* * HTML TAGS */
 body{
     font-family: sans-serif;
+    color: var(--main-color-text);
 }
 
 ul{
