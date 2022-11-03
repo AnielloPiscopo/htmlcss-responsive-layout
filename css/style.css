@@ -275,10 +275,6 @@ main div.columns-container.d_flex>.column{
     color: var(--secondary-color-text);
 }
 
-#strategic-plannings .container .d_flex{
-    align-items: flex-start;
-}
-
 #strategic-plannings .img-container{
     margin-top: 2em;
     padding-bottom: 10em;
@@ -498,5 +494,9 @@ RESPONSIVENESS */
         width: 50%;
         margin-left: 25%;
         margin-right: 25%;
+    }
+
+    #strategic-plannings .container .d_flex{
+        align-items: flex-end;
     }
 }
