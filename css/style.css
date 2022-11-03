@@ -1,26 +1,4 @@
 /* ! MOMENTANEAL STYLES */
-#testimonials .card{
-    height: auto;
-}
-
-#testimonials .img-container{
-    height: 5em;
-    background-color: brown;
-    border: 1px solid;
-}
-
-#testimonials .text-content{
-    border: 1px solid;
-    height: 5em;
-    background-color: brown;
-}
-
-#about-us .clearfix > *{
-    height: 50em;
-    background-color: red;
-    border: 1px solid;
-}
-
 footer section{
     border-bottom: 1px solid;
     height: 50em;
@@ -336,8 +314,29 @@ main div.columns-container.d_flex>.column{
 #testimonials .title{
     color: var(--secondary-color);
 }
+
 #testimonials .card{
     border-radius: var(--big_border-radius);
+    background-color: var(--secondary-color);
+}
+
+#testimonials .card *{
+    color: var(--secondary-color-text);
+}
+
+#testimonials .card .img-container{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    border-radius: var(--rounded-border-radius);
+}
+
+#testimionals .card .text-content .uppercase{
+    padding: 2em 0;
 }
 
 
@@ -404,6 +403,11 @@ RESPONSIVENESS */
 
     #testimonials .cards .card .text-content{
         width: calc(80% - var(--column-distance));
+    }
+
+    #testimionals .card .img-container{
+        margin-left: 0;
+        margin-right: 0;
     }
 
     #beneficts .columns-container.d_flex .column{
