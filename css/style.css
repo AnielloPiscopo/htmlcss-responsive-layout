@@ -1,12 +1,4 @@
 /* ! MOMENTANEAL STYLES */
-header{
-    background-color: blueviolet;
-}
-
-.p_absolute{
-    background-color: aqua;
-}
-
 main section{
     border-bottom: 1px solid;
     height: 100em;
@@ -80,16 +72,23 @@ GENERAL STYLES *****************************/
     /* ? Colors */
     --main-color-text: #333333;
     --secondary-color-text: white;
-
+    --main-color: #0084fd;
+    --lighter-main-color: #b5ddff;
+    --secondary-color: #9792e4;
+    --special-color: #fdc15f;
 
 
     /* ? Distances */
     --column-distance: 2em;
+    --container-padding-top :4em;
+    --container-highter-padding-top:6em;
 
 
     /* ? Borders */
     --small_border-radius: 1.5em;
     --big_border-radius: 3em;
+    --oval-border-radius:25%;
+    --rounded-border-radius:50%;
 }
 
 
@@ -175,6 +174,10 @@ a{
     text-align: center;
 }
 
+.btn{
+    border-radius: var(--oval-border-radius);
+}
+
 
 /* ? Combinations */
 .img-container img{
@@ -206,15 +209,19 @@ header nav ul.p_absolute{
     right: 0;
 }
 
+header nav .btn{
+    padding: 0.5em 1em;
+}
+
 
 
 /* * MAIN */
-main .container{
-    padding-top: 4em;
+main  section>.container{
+    padding-top: var(--container-padding-top);
 }
 
-main .container:last-of-type{
-    padding-top: 6em;
+main section:last-of-type>.container{
+    padding-top: var(--container-highter-padding-top);
 }
 
 main .columns-container.d_flex .column{
