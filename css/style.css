@@ -76,6 +76,15 @@ GENERAL STYLES *****************************/
 
 
 
+/* * ROOT */
+:root{
+    --column-distance: 2em;
+    --small_border-radius: 2em;
+    --big_border-radius: 4em;
+}
+
+
+
 /* * HTML TAGS */
 body{
     font-family: sans-serif;
@@ -131,7 +140,7 @@ ul{
 }
 
 
-/* ? Text */
+/* ? Text and Imgs*/
 .title{
     font-size: 2em;
     padding-bottom: 1.5em;
@@ -150,7 +159,11 @@ ul{
 }
 
 
-/* ? Other */
+/* ? Combinations */
+.img-container img{
+    width: 100%;
+    object-fit: cover;
+}
 
 
 
@@ -188,16 +201,32 @@ main .container:last-of-type{
 }
 
 main .columns-container.d_flex .column{
-    margin-bottom: 2em;
+    margin-bottom: var(--column-distance);
     width: 100%;
 }
 
-main .card.small_border-radius{
-    border-radius: 2em;
+
+/* ? General Info */
+#general-info .card{
+    border-radius: var(--small_border-radius);
 }
 
-main .card.big_border-radius{
-    border-radius: 4em;
+
+/* ? Strategic Plannings */
+#strategic-plannings .card{
+    border-radius: var(--big_border-radius);
+}
+
+
+/* ? Testimonials */
+#testimonials .card{
+    border-radius: var(--big_border-radius);
+}
+
+
+/* ? Beneficts */
+#beneficts .card{
+    border-radius: var(--small_border-radius);
 }
 
 
@@ -236,7 +265,7 @@ RESPONSIVENESS */
     }
 
     .d_flex.columns-container .column{
-        padding-right: 2em;
+        padding-right: var(--column-distance);
     }
 
 
@@ -245,31 +274,31 @@ RESPONSIVENESS */
     
     /* ? MAIN */
     #general-info .columns-container.d_flex .column{
-        width: calc(100%/3 - 2em);
+        width: calc(100%/3 - var(--column-distance));
     }
 
     #general-info .columns-container.d_flex .column:first-of-type{
-        width: calc(100%/3*2 - 2em);
+        width: calc(100%/3*2 - var(--column-distance));
     }
 
     #testimonials .cards .card .img-container{
-        width: calc(20% - 2em);
+        width: calc(20% - var(--column-distance));
     }
 
     #testimonials .cards .card .text-content{
-        width: calc(80% - 2em);
+        width: calc(80% - var(--column-distance));
     }
 
     #beneficts .columns-container.d_flex .column{
-        width: calc(100%/2 - 2em);
+        width: calc(100%/2 - var(--column-distance));
     }
 
     #about-us .columns-container.d_flex .column.text-content{
-        width: calc(100%/3*2 - 2em);
+        width: calc(100%/3*2 - var(--column-distance));
     }
 
     #about-us .columns-container.d_flex article.column{
-        width: calc(100%/3 - 2em);
+        width: calc(100%/3 - var(--column-distance));
     }
 }
 
@@ -312,10 +341,10 @@ RESPONSIVENESS */
 
     /* ? MAIN */
     #beneficts .columns-container.d_flex .column{
-        width: calc(100%/3 - 2em);
+        width: calc(100%/3 - var(--column-distance));
     }
 
     #strategic-plannings .columns-container.d_flex .column{
-        width: calc(100%/2 - 2em);
+        width: calc(100%/2 - var(--column-distance));
     }
 }
