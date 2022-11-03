@@ -59,6 +59,7 @@ GENERAL STYLES *****************************/
 :root{
     /* ? Colors */
     --main-color-text: #333333;
+    --lighter-main-color-text: #647a8e;
     --secondary-color-text: white;
     --main-color: #0084fd;
     --lighter-main-color: #b5ddff;
@@ -83,7 +84,7 @@ GENERAL STYLES *****************************/
 
 /* * HTML TAGS */
 body{
-    font-family: sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 body *{
@@ -231,6 +232,19 @@ main .columns-container.d_flex .column{
     padding: 3em var(--column-distance);
 }
 
+#general-info .card:first-of-type{
+    padding-bottom: 0;
+}
+
+#general-info .card .subtitle{
+    color: var(--main-color);
+}
+
+#general-info .card p{
+    color: var(--lighter-main-color-text);
+    font-weight: bold;
+}
+
 #general-info .card .btn{
     background-color: var(--main-color);
     padding: 0.7em 3em;
@@ -239,6 +253,10 @@ main .columns-container.d_flex .column{
 
 #general-info .card .btn *{
     color: var(--secondary-color-text);
+}
+
+#general-info .card .img-container{
+    width: 50%;
 }
 
 
@@ -289,12 +307,12 @@ RESPONSIVENESS */
     /* *GENERAL STYLES */
 
     /* ? CLASSES */
-    .d_flex.columns-container{
+    .d_flex.columns-container:not(.d_flex.columns-container.card){
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .d_flex.columns-container .column{
+    .d_flex.columns-container .column:not(.d_flex.columns-container.card){
         padding-right: var(--column-distance);
     }
 
@@ -344,6 +362,11 @@ RESPONSIVENESS */
         max-width: 1050px;
     }
 
+    .d_flex.columns-container.card{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
 
 
     /* * SPECIFIC STYLES */
@@ -381,6 +404,10 @@ RESPONSIVENESS */
 
 
     /* ? MAIN */
+    #general-info article.d_flex.card.columns-container .column{
+        width: calc(100%/2);
+    }
+
     #beneficts .columns-container.d_flex .column{
         width: calc(100%/3 - var(--column-distance));
     }
