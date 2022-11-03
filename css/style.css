@@ -77,6 +77,10 @@ a{
     text-decoration: none;
 }
 
+p{
+    line-height: 2em;
+}
+
 
 /* * CLASSES */
 
@@ -307,13 +311,22 @@ main div.columns-container.d_flex>.column{
 
 
 /* ? Testimonials */
+#testimonials .d_flex{
+    align-items: center;
+}
+
 #testimonials .title{
     color: var(--secondary-color);
+}
+
+#testimonials p{
+    padding-bottom: 1em;
 }
 
 #testimonials .card{
     border-radius: var(--big_border-radius);
     background-color: var(--secondary-color);
+    margin: 2em 0;
 }
 
 #testimonials .card *{
@@ -324,15 +337,36 @@ main div.columns-container.d_flex>.column{
     width: 200px;
     height: 200px;
     overflow: hidden;
-    margin-left: 30%;
-    margin-right: 30%;
     margin-top: 2.5em;
     margin-bottom: 1em;
     border-radius: var(--rounded-border-radius);
 }
 
-#testimionals .card .text-content .uppercase{
+#testimonials .card .text-content .uppercase{
     padding: 2em 0;
+    font-weight: bold;
+}
+
+#testimonials .card .text-content p::before{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f10d';
+}
+
+#testimonials .card .text-content p::after{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f10e';
 }
 
 
@@ -376,7 +410,7 @@ RESPONSIVENESS */
         flex-wrap: wrap;
     }
 
-    .d_flex.columns-container .column:not(#general-info article.d_flex.columns-container.card .column){
+    .d_flex.columns-container .column:not(article.d_flex.columns-container.card .column){
         padding-right: var(--column-distance);
     }
 
@@ -393,17 +427,19 @@ RESPONSIVENESS */
         width: calc(100%/3*2 - var(--column-distance));
     }
 
+    #testimonials .card{
+        text-align: left;
+    }
+
     #testimonials .cards .card .img-container{
-        width: calc(20% - var(--column-distance));
+        margin-left: 1em;
+        width: calc(30% - 3em);
     }
 
     #testimonials .cards .card .text-content{
-        width: calc(80% - var(--column-distance));
-    }
-
-    #testimionals .card .img-container{
-        margin-left: 0;
-        margin-right: 0;
+        width: calc(70% - 3em);
+        margin-left: 2em;
+        margin-right: 2em;
     }
 
     #beneficts .columns-container.d_flex .column{
@@ -498,5 +534,13 @@ RESPONSIVENESS */
 
     #strategic-plannings .container .d_flex{
         align-items: flex-end;
+    }
+
+    #testimonials .cards .card .img-container{
+        width: calc(25% - 3em);
+    }
+
+    #testimonials .cards .card .text-content{
+        width: calc(75% - 3em);
     }
 }
