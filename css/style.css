@@ -151,7 +151,7 @@ a{
 }
 
 .subtitle{
-    padding-bottom: 1.5em;
+    padding-bottom: 1em;
 }
 
 .uppercase{
@@ -250,6 +250,12 @@ main div.columns-container.d_flex>.column{
 #general-info .card p{
     color: var(--lighter-main-color-text);
     font-weight: bold;
+}
+
+#general-info .card>.icon{
+    color: var(--main-color);
+    font-size: 5em;
+    padding-bottom: 0.2sem;
 }
 
 #general-info .card:first-of-type p{
