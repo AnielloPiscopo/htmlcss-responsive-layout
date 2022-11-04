@@ -1,24 +1,3 @@
-/* ! MOMENTANEAL STYLES */
-footer section{
-    border-bottom: 1px solid;
-    height: 50em;
-    background-color: yellow;
-}
-
-footer .container{
-    background-color: azure;
-}
-
-
-
-
-
-
-
-
-
-
-
 /* *****************************************
 GENERAL STYLES *****************************/
 
@@ -39,6 +18,7 @@ GENERAL STYLES *****************************/
     --main-color-text: #333333;
     --lighter-main-color-text: #647a8e;
     --secondary-color-text: white;
+    --darker-secondary-color-text: #d0cef2;
     --main-color: #0084fd;
     --lighter-main-color: #b5ddff;
     --secondary-color: #9792e4;
@@ -46,7 +26,7 @@ GENERAL STYLES *****************************/
 
 
     /* ? Distances */
-    --column-distance: 1em;
+    --column-distance: 2em;
     --container-padding-top :4em;
     --container-highter-padding-top:6em;
 
@@ -130,7 +110,7 @@ p{
 /* ? Text and Imgs*/
 .title{
     font-size: 2em;
-    padding-bottom: 1.5em;
+    padding-bottom: 3rem;
 }
 
 .subtitle{
@@ -311,6 +291,10 @@ main div.columns-container.d_flex>.column{
 
 
 /* ? Testimonials */
+#testimonials{
+    padding-bottom: 6em;
+}
+
 #testimonials .d_flex{
     align-items: center;
 }
@@ -327,6 +311,7 @@ main div.columns-container.d_flex>.column{
     border-radius: var(--big_border-radius);
     background-color: var(--secondary-color);
     margin: 2em 0;
+    padding: 2em 1em;
 }
 
 #testimonials .card *{
@@ -371,24 +356,169 @@ main div.columns-container.d_flex>.column{
 
 
 /* ? Beneficts */
+#beneficts{
+    background-color: var(--secondary-color);
+    padding-bottom: 4em;
+}
+
+#beneficts .title{
+    color: var(--secondary-color-text);
+}
+
 #beneficts .card{
     border-radius: var(--small_border-radius);
+    background-color: var(--secondary-color-text);
+    padding: 3.5em 2em 4em 2em;
+}
+
+#beneficts .card p{
+    color: var(--main-color-text);
+    padding-bottom: 2em;
+}
+
+#beneficts .card .number{
+    color: var(--secondary-color);
+    font-size: 4em;
+    font-weight: bold;
+}
+
+#beneficts .card .subtitle{
+    color: var(--secondary-color);
+}
+
+#beneficts .card .btn{
+    color: var(--secondary-color-text);
+    background-color: var(--secondary-color);
+    padding: 0.5em 3em;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 
 /* ? About Us */
-#about-us p{
+#about-us{
+    font-size: 1.2em;
     padding-bottom: 4em;
+}
+
+#about-us .title{
+    color: var(--secondary-color);
+    font-size: 4em;
+}
+
+#about-us .img-container{
+    width: 200px;
+    height: 200px;
+    border-radius: var(--rounded-border-radius);
+    overflow: hidden;
+}
+
+#about-us .img-container::after{
+    display: inline-block;
+    position: absolute;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f10d';
+    top: 0;
+    left: 150px;
+    font-size: 3.5em;
+    color: var(--secondary-color);
+}
+
+#about-us figcaption.text-content p{
+    color: var(--secondary-color);
+    padding: 1em 0 ;
+    line-height: 1.2em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#about-us .btn{
+    background-color: var(--secondary-color);
+    padding: 0.5em;
+}
+
+#about-us .btn *{
+    color: var(--secondary-color-text);
+}
+
+#about-us .btn .icon{
+    padding-right: 0.5em;
 }
 
 
 
 /* * FOOTER */
+footer *{
+    color: var(--secondary-color-text);
+}
+
+footer a:not(.btn){
+    text-decoration: underline;
+}
+
 footer .container{
     max-width: 480px;
 }
 
 
+/* ? Free Trial Period Download */
+#free-trial-period-download{
+    background-color: var(--secondary-color);
+    padding-top: 3em;
+}
+
+#free-trial-period-download .subtitle{
+    color: var(--darker-secondary-color-text);
+}
+
+#free-trial-period-download .btn{
+    background-color: var(--secondary-color-text);
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 1em 4em;
+}
+
+#free-trial-period-download p{
+    padding-bottom: 3.7em;
+}
+
+#free-trial-period-download .copyright{
+    padding-top: 3.7em;
+    padding-bottom: 5em;
+}
+
+#free-trial-period-download .copyright span::after{
+    content: '\2022';
+}
+
+#special-offer{
+    color: var(--special-color);
+    font-size: 5em;
+    padding-bottom: 0.5em;
+}
+
+
+/* ? Extra Info */
+#extra-info{
+    padding-bottom: 3em;
+    background-color: var(--main-color-text);
+    color: var(--secondary-color-text);
+}
+
+#extra-info p{
+    line-height: 1.2em;
+    padding: 2.5em 0;
+}
+
+#extra-info a{
+    color: var(--secondary-color);
+}
 
 
 
