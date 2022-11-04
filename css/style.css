@@ -612,6 +612,10 @@ RESPONSIVENESS */
         color: var(--secondary-color-text);
     }
 
+    header nav ul.d_none{
+        display: flex !important;
+    }
+
     header nav ul.p_absolute,
     header .p_relative{
         position: static;
