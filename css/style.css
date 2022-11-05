@@ -439,6 +439,10 @@ main div.columns-container.d_flex>.column{
     font-size: 4em;
 }
 
+#about-us .columns-container.d_flex .column{
+    padding-right: 0;
+}
+
 #about-us .img-container{
     width: 200px;
     height: 200px;
@@ -475,12 +479,12 @@ main div.columns-container.d_flex>.column{
     padding: 0.5em;
 }
 
-#about-us .btn *{
-    color: var(--secondary-color-text);
+#about-us .btn span{
+    display: inline-block;
 }
 
-#about-us .btn .icon{
-    padding-right: 0.5em;
+#about-us .btn *{
+    color: var(--secondary-color-text);
 }
 
 
@@ -616,8 +620,14 @@ RESPONSIVENESS */
     #about-us .columns-container.d_flex article.column{
         width: calc(100%/3 - var(--column-distance));
     }
-}
 
+    #about-us .btn{
+        min-width: 216px;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
 
 
 
