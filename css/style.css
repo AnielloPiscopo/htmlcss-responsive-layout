@@ -23,6 +23,8 @@ GENERAL STYLES *****************************/
     --lighter-main-color: #b5ddff;
     --secondary-color: #9792e4;
     --special-color: #fdc15f;
+    --visited-links:purple;
+    --active-links:red;
 
 
     /* ? Distances */
@@ -57,8 +59,16 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    font-weight: bold;
+}
+
 p{
     line-height: 2em;
+}
+
+figure img{
+    cursor: zoom-in;
 }
 
 
@@ -125,8 +135,17 @@ p{
     text-align: center;
 }
 
+.underline{
+    text-decoration: underline;
+}
+
 .btn{
     border-radius: var(--oval-border-radius);
+}
+
+.icon,
+.logo{
+    cursor: pointer;
 }
 
 
@@ -139,6 +158,20 @@ p{
 
 h3.subtitle{
     font-size: 1.5em;
+}
+
+a.btn:hover{
+    font-weight: normal;
+    filter: opacity(80%);
+}
+
+a.underline:active,
+a.underline:visited:active{
+    color: var(--active-links);
+}
+
+a.underline:visited{
+    color: var(--visited-links);
 }
 
 
@@ -457,10 +490,6 @@ footer *{
     color: var(--secondary-color-text);
 }
 
-footer a:not(.btn){
-    text-decoration: underline;
-}
-
 footer .container{
     max-width: 480px;
 }
@@ -501,6 +530,10 @@ footer .container{
     color: var(--special-color);
     font-size: 5em;
     padding-bottom: 0.5em;
+}
+
+#special-offer:hover{
+    text-transform: uppercase;
 }
 
 
